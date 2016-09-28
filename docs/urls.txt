@@ -1,0 +1,10 @@
+https://core.telegram.org/bots/api
+http://arda.pw/telegram-bot-php-api-application/
+https://github.com/tekook/TelegramLibrary
+https://github.com/akalongman/php-telegram-bot
+https://github.com/irazasyed/telegram-bot-sdk
+https://telegram-bot-sdk.readme.io/docs/getme
+https://github.com/akalongman/php-telegram-bot#create-your-first-bot
+https://tuts.codingo.me/using-telegram-messenger-for-laravel-application-notifications
+https://github.com/Eleirbag89/TelegramBotPHP
+https://jaconda.im/api

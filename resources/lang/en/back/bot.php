@@ -1,0 +1,20 @@
+<?php
+return [
+	'dashboard' => 'User Bots',
+	'users' => 'Bots',
+	'back' => 'Back',
+	'stripe_customer_id' => 'Stripe customer id',
+	'first_name' => 'First Name',
+	'last_name' => 'Last Name',
+	'username' => 'Username',
+	'token' => 'Token',
+	'image' => 'Image',
+	'description' => 'Description',
+	'start_message' => 'Start message',
+	'autoresponse' => 'Autoresponse',
+	'contact_form' => 'Contact form',
+	'galleries' => 'Galleries',
+	'channels' => 'Channels',
+	'created_at' => 'Created',
+	'no_record' => 'No record found',
+];

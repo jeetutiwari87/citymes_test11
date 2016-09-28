@@ -1,0 +1,17 @@
+app.citymes.com hosting:
+
+IP: 46.16.62.241
+
+FTP:
+46.16.62.241
+User: app4802
+Password: yn72lO0F
+
+MySQL:
+DataBase: citymesapp
+User: myapp3623
+Password: xbbP9GMw
+phpMyAdmin: https://app.citymes.com/phpmyadmin
+
+WEB:
+https://app.citymes.com

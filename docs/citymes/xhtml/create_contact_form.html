@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Untitled Document</title>
+		<link href="css/style.css" rel="stylesheet"  />
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<script src="js/jquery1.12.4.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type='text/javascript'><!--
+			$(document).ready(function() {
+				enableSelectBoxes();
+			});
+			
+			function enableSelectBoxes(){
+				$('div.selectBox').each(function(){
+					$(this).children('span.selected').html($(this).children('div.selectOptions').children('span.selectOption:first').html());
+					$(this).attr('value',$(this).children('div.selectOptions').children('span.selectOption:first').attr('value'));
+					
+					$(this).children('span.selected,span.selectArrow').click(function(){
+						if($(this).parent().children('div.selectOptions').css('display') == 'none'){
+							$(this).parent().children('div.selectOptions').css('display','block');
+						}
+						else
+						{
+							$(this).parent().children('div.selectOptions').css('display','none');
+						}
+					});
+					
+					$(this).find('span.selectOption').click(function(){
+						$(this).parent().css('display','none');
+						$(this).closest('div.selectBox').attr('value',$(this).attr('value'));
+						$(this).parent().siblings('span.selected').html($(this).html());
+					});
+				});				
+			}//-->
+		</script>
+		</head>
+
+		<body>
+        <section class="col_top">
+          <div class="container_1">
+            <div class="col-sm-1 col-lg-1">
+              <div  class="user"><a href="#"><img src="images/img1.png"  /></a></div>
+              <div class="col_content"><a href="#"><img src="images/img2.png"  /></a></div>
+              <div class="col_message"><a href="#"><img src="images/message.png"  /></a></div>
+              <div class="col_lock"><a href="#"><img src="images/img3.png"  /></a></div>
+            </div>
+            <div class="col-sm-3 col-sm-offset-1  col-lg-2 col-lg-offset-1 ">
+              <h1 class="logo"><a href="#"><img src="images/logo.png" /></a></h1>
+              <h3>Summary</h3>
+              <ul>
+                <li>
+                  <p><span>2</span> Bots</p>
+                </li>
+                <li>
+                  <p><span>3</span> Channels</p>
+                </li>
+              </ul>
+              <div class="new_bot_channel"><a href="#" class="bot_button"><img src="images/plus.png" /></a>
+                <p>Add a new Bot & Channel</p>
+              </div>
+              <div class="summary_content">
+                <h4>Bots</h4>
+                <p>JanaNovakova pepebotaa johanketh
+                  perivebsith. </p>
+              </div>
+              <div class="summary_content">
+                <h4>Channels</h4>
+                <p>ChannelsNames1</p>
+              </div>
+            </div>
+            <div class="col-sm-8 col-sm-offset-4 col-lg-9 col-lg-offset-3">
+              <div class="top_section">
+                <div class="search">
+                  <form>
+                    <span aria-hidden="true" class="glyphicon glyphicon-search"></span>
+                    <input type="search"  value="" placeholder="Search here" />
+                  </form>
+                </div>
+                <div class="col-about">
+                  <div class="col-notification">
+                    <ul>
+                      <li><a href="#"><span aria-hidden="true" class="glyphicon glyphicon-bell"></span></a></li>
+                      <li><a href="#"><span aria-hidden="true" class="glyphicon glyphicon-envelope"></span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-profile-view"> <span><img src="images/img4.png" /></span>
+                    <p><a href="#">Jana Nova</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="my_account telegram">
+                <h4><img src="images/telegrtam_icon.png" /><span>Telegram</span></h4>
+                <h5>Create Bot Command</h5>
+              </div>
+              <div class="bot_command">
+                <div class="submenu">
+                  <h4>Submenu heading text</h4>
+                  <input type="text" value="" />
+                </div>
+                <div class="bot_command_content">
+                  <h2>Select type</h2>
+                  <ul class="row select_type">
+                    <li class="col-xs-6 col-sm-3 active"><a href="#"> <span><img class="select" src="images/s1.png" /> <img  class="unselect" src="images/1.png" /> </span>
+                      <h4>autoresponse</h4>
+                      </a></li>
+                    <li class="col-xs-6 col-sm-3"><a href="#"> <span><img  class="select" src="images/s2.png" /><img class="unselect" src="images/2.png" /></span>
+                      <h4>Contact form</h4>
+                      </a></li>
+                    <li class="col-xs-6 col-sm-3"><a href="#"> <span><img  class="select" src="images/s3.png" /><img class="unselect" src="images/3.png" /></span>
+                      <h4>galleries</h4>
+                      </a></li>
+                    <li class="col-xs-6 col-sm-3"><a href="#"> <span><img  class="select" src="images/s4.png" /><img class="unselect" src="images/4.png" /></span>
+                      <h4>channels</h4>
+                      </a></li>
+                  </ul>
+                </div>
+                <div class="bot_command_form">
+                <form>
+                  <ul>
+                    <li> <span>Introduction Headline</span>
+                      <label>
+                        <input type="text" value=""  />
+                      </label>
+                    </li>
+                    <li> <span>Question Heading</span>
+                      <label>
+                        <input type="text" value=""  />
+                      </label>
+                    </li>
+                    <li class="type_response">
+                     <span> Type of Response Expected </span>
+                      <div class='selectBox'> 
+                      <span class='selected'></span>
+                       <span class='selectArrow'><img src="images/select_box_arrow2.png" /></span>
+                        <div class="selectOptions" >
+                         <span class="selectOption" value="Option 1" >select </span>
+                         <span class="selectOption" value="Option 2">Option 2</span> 
+                         <span class="selectOption" value="Option 3">Option 3</span> </div>
+                      </div>
+                  
+                    </li>
+                    <li class="add_more"> <a href="#">Add more question + </a> </li>
+                    <li class="input_submit"><input type="submit" value="submit" /></li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+        </section>
+</body>
+</html>
